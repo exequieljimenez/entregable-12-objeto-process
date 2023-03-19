@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "title": "lapicera",
+    "price": 300,
+    "thumbnail": "https://hubpen.com/images/628REDBLUE-ViennaRed.jpg?image=3"
+  },
+  {
+    "id": 2,
+    "title": "lapiz",
+    "price": 250,
+    "thumbnail": "https://cdn.shopify.com/s/files/1/0027/1089/6705/products/Havest_CedarPencil_1024x1024@2x.jpg?v=1576593212"
+  },
+  {
+    "id": 3,
+    "title": "Resma",
+    "price": 980,
+    "thumbnail": "https://ae01.alicdn.com/kf/Ha7fed3286c6649e1ab54b67cf96f6bbe6/Papel-de-copia-multifunci-n-A4-impresora-de-inyecci-n-de-tinta-l-ser-A4-suministros.jpg_Q90.jpg_.webp"
+  }
+]

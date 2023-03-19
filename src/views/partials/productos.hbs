@@ -1,0 +1,37 @@
+<form id="productForm" method="post">
+    <label>nombre</label>
+    <input type="text" name="title" id="title"/>
+    <label>precio</label>
+    <input type="number" name="price" id="price"/>
+    <label>url imagen</label>
+    <input type="url" name="thumbnail" id="thumbnail"/>
+    <button type="submit">Agregar</button>
+</form>
+
+<div>
+    {{#if products}}
+    <h2>Productos</h2>
+        <table>
+            <thead>
+                <tr>
+                <th scope="col">Titulo</th>
+                <th scope="col">Precio</th>
+                <th scope="col">Imagen</th>
+                </tr>
+            </thead>
+            <tbody>
+                {{#each products}}
+                <tr>
+                    <td>{{this.title}}</td>
+                    <td>{{this.price}}</td>
+                    <td><img width="70" src={{this.thumbnail}}/></td>
+                </tr>
+                {{/each}}
+            </tbody>
+        </table>
+    {{else}}
+        <div>
+            <p>No hay productos</p>
+        </div>
+    {{/if}}
+</div>
