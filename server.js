@@ -22,7 +22,7 @@ const productosApi = new Contenedor('productos.json')
 
 async function addUser(usuario) {
     try {
-        const URL = `mongodb://localhost:${process.env.DB_MONGO_PORT}/usuariosEntregable11`;
+        const URL = `mongodb://${process.env.DB_MONGO_HOST}:${process.env.DB_MONGO_PORT}/usuariosEntregable11`;
         mongoose.connect(URL, {
             useNewUrlParser: true,
             useUnifiedTopology: true
