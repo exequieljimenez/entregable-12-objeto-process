@@ -185,8 +185,10 @@ app.get('/info', (req, res) => {
     res.send(`<p>Argumentos de entrada: ${process.argv.slice(2)}</p><br><p>Sistema operativo: ${process.platform}</p><br><p>Versión de node: ${process.version}</p><br><p>Memoria total reservada: ${process.memoryUsage().rss}</p><br><p>Path de ejecucion: ${process.cwd()}</p><br><p>Process Id: ${process.pid}</p><br><p>Carpeta del proyecto: ${path.basename(__dirname)}</p>`)
 })
 
-let options = {alias: {p: 'port'}}
+let options = {alias: {p: 'port'}, default: {p: 8080}}
 let port = minimist(process.argv.slice(2), options)
+
+
 
 
 const server = app.listen(port, () => {
